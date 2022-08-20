@@ -1,0 +1,215 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --ff-headings: "Poppins", sans-serif;
+  --ff-body: "Open Sans", sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 600;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background: var(--violet) url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 40em) {
+  body {
+    background: var(--violet) url("./images/bg-desktop.svg");
+    background-position: top -50px left 50px;
+    background-repeat: no-repeat;
+  }
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* general styling */
+header {
+  padding-block: 2em;
+}
+
+.logo {
+  width: 160px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-headings);
+}
+
+p {
+  color: white;
+  font-weight: var(--fw-regular);
+  font-family: var(--ff-body);
+  padding-block: 1em;
+  text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+  main {
+    max-width: 1440px;
+    display: flex;
+    padding-top: 1em;
+  }
+
+  .img-wrapper {
+    flex: 60%;
+  }
+
+  .description {
+    flex: 40%;
+  }
+
+  p {
+    max-width: 50ch;
+    text-align: left;
+  }
+}
+
+/* component styles */
+.inline-padding {
+  padding-inline: 2em;
+}
+
+.description {
+  padding-top: 4em;
+}
+
+/* utility classes */
+.primary-header {
+  font-size: 1.6em;
+  font-weight: var(--fw-bold);
+  color: white;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin: 0.7em auto;
+  padding: 0.75em;
+  color: var(--violet);
+  background-color: white;
+  border-radius: 100vw;
+  text-decoration: none;
+  font-family: var(--ff-body);
+  font-size: 0.8em;
+  box-shadow: 0 2px 8px var(--violet);
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--soft-magenta);
+}
+
+@media screen and (min-width: 40em) {
+  .primary-header {
+    font-size: 2em;
+    text-align: left;
+    max-width: 20ch;
+  }
+
+  .inline-padding {
+    padding-inline: 6em;
+  }
+
+  .btn {
+    font-size: 1em;
+    width: 150px;
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 0;
+    padding: 0.75em 3em;
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 0.7em;
+  margin-top: 5em;
+  list-style: none;
+}
+
+.icon {
+  font-size: 16px;
+  color: white;
+  padding: 0.5em;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 40em) {
+  .social-media {
+    justify-content: flex-end;
+    gap: 0.7em;
+    margin-top: 1em;
+  }
+}
