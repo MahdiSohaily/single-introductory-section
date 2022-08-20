@@ -92,6 +92,10 @@ header {
     padding-block: 2em;
 }
 
+.logo {
+    width: 160px;
+}
+
 h1,
 h2,
 h3,
@@ -137,15 +141,28 @@ p {
     padding: 2em;
 }
 .description {
-    padding-block: 3em;
-    background-color: rebeccapurple;
+    padding-block: 4em;
 }
 /* utility classes */
 .primary-header {
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: var(--fw-bold);
     color: white;
     text-align: center;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 0.7em auto;
+    padding: 0.75em;
+    color: var(--violet);
+    background-color: white;
+    border-radius: 100vw;
+    text-decoration: none;
+    font-family: var(--ff-body);
+    font-size: 0.8em;
 }
 
 @media screen and (min-width: 40em) {
@@ -157,17 +174,10 @@ p {
     .inline-padding {
         padding: 4em;
     }
-}
 
-.btn {
-    display: block;
-    width: 170px;
-    margin-top: 0.5em;
-    color: var(--violet);
-    background-color: white;
-    padding: 0.75em 3.5em;
-    border-radius: 100vw;
-    text-decoration: none;
-    font-family: var(--ff-body);
-    margin-inline: auto;
+    .btn {
+        display: block;
+        margin-top: 0.5em;
+        padding: 0.75em 3.5em;
+    }
 }
