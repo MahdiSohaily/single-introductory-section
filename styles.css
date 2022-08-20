@@ -121,19 +121,17 @@ p {
   
     .img-wrapper {
       flex: 60%;
+      background-color: red;
     }
     
     .description {
       flex: 40%;
+      background-color: rebeccapurple;
     }
 
     p {
-        color: white;
-        font-weight: var(--fw-regular);
-        font-family: var(--ff-body);
         max-width: 50ch;
-        padding-block: 1em;
-        text-align: center;
+        text-align: left;
     }
   }
 /* component styles */
@@ -163,21 +161,27 @@ p {
     text-decoration: none;
     font-family: var(--ff-body);
     font-size: 0.8em;
+    box-shadow: 0 2px 8px var(--violet);
 }
 
 @media screen and (min-width: 40em) {
     .primary-header {
+        font-size: 2em;
         text-align: left;
         max-width: 20ch;
     }
 
     .inline-padding {
-        padding: 4em;
+        padding-inline: 6em;
     }
 
     .btn {
+        font-size: 1em;
+        width: 150px;
         display: block;
         margin-top: 0.5em;
-        padding: 0.75em 3.5em;
+        margin-left: 0;
+        padding: 0.75em 3em;
+
     }
 }
