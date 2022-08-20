@@ -1,10 +1,8 @@
 :root {
   --violet: hsl(257, 40%, 49%);
   --soft-magenta: hsl(300, 69%, 71%);
-
   --ff-headings: "Poppins", sans-serif;
   --ff-body: "Open Sans", sans-serif;
-
   --fw-regular: 400;
   --fw-bold: 600;
 }
@@ -133,13 +131,16 @@ p {
     text-align: left;
   }
 }
+
 /* component styles */
 .inline-padding {
   padding-inline: 2em;
 }
+
 .description {
   padding-top: 4em;
 }
+
 /* utility classes */
 .primary-header {
   font-size: 1.6em;
@@ -163,6 +164,11 @@ p {
   box-shadow: 0 2px 8px var(--violet);
 }
 
+.btn:hover {
+  color: white;
+  background-color: var(--soft-magenta);
+}
+
 @media screen and (min-width: 40em) {
   .primary-header {
     font-size: 2em;
@@ -184,27 +190,26 @@ p {
   }
 }
 
-
 .social-media {
-    display: flex;
-    justify-content: center;
-    gap: 0.7em;
-    margin-top: 5em;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 0.7em;
+  margin-top: 5em;
+  list-style: none;
 }
 
 .icon {
-    font-size: 16px;
-    color: white;
-    padding: 0.4em;
-    border: 1px solid white;
-    border-radius: 50%;
+  font-size: 16px;
+  color: white;
+  padding: 0.5em;
+  border: 1px solid white;
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 40em) {
-    .social-media {
-        justify-content: flex-end;
-        gap: 0.7em;
-        margin-top: 1em;
-    }
+  .social-media {
+    justify-content: flex-end;
+    gap: 0.7em;
+    margin-top: 1em;
+  }
 }
