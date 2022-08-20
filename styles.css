@@ -117,7 +117,7 @@ p {
   main {
     max-width: 1440px;
     display: flex;
-    padding-block: 1em;
+    padding-top: 1em;
   }
 
   .img-wrapper {
@@ -135,10 +135,10 @@ p {
 }
 /* component styles */
 .inline-padding {
-  padding: 2em;
+  padding-inline: 2em;
 }
 .description {
-  padding-block: 4em;
+  padding-top: 4em;
 }
 /* utility classes */
 .primary-header {
@@ -182,4 +182,20 @@ p {
     margin-left: 0;
     padding: 0.75em 3em;
   }
+}
+
+
+.social-media {
+    float: right;
+    display: flex;
+    gap: 0.7em;
+    list-style: none;
+}
+
+.icon {
+    font-size: 16px;
+    color: white;
+    padding: 0.4em;
+    border: 2px solid white;
+    border-radius: 50%;
 }
