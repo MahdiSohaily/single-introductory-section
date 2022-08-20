@@ -38,7 +38,6 @@ body {
   height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  padding: 3em;
   background: var(--violet) url("./images/bg-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -89,12 +88,10 @@ select {
 }
 
 /* general styling */
-
-@media screen and (min-width: 40em) {
-  main {
-    display: flex;
-  }
+header {
+    padding-block: 2em;
 }
+
 h1,
 h2,
 h3,
@@ -102,4 +99,75 @@ h4,
 h5,
 h6 {
   font-family: var(--ff-headings);
+}
+
+p {
+    color: white;
+    font-weight: var(--fw-regular);
+    font-family: var(--ff-body);
+    padding-block: 1em;
+    text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+    main {
+      display: flex;
+      padding-block: 1em;
+    }
+  
+    .img-wrapper {
+      flex: 60%;
+    }
+    
+    .description {
+      flex: 40%;
+    }
+
+    p {
+        color: white;
+        font-weight: var(--fw-regular);
+        font-family: var(--ff-body);
+        max-width: 50ch;
+        padding-block: 1em;
+        text-align: center;
+    }
+  }
+/* component styles */
+.inline-padding {
+    padding: 2em;
+}
+.description {
+    padding-block: 3em;
+    background-color: rebeccapurple;
+}
+/* utility classes */
+.primary-header {
+    font-size: 1.5em;
+    font-weight: var(--fw-bold);
+    color: white;
+    text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+    .primary-header {
+        text-align: left;
+        max-width: 20ch;
+    }
+
+    .inline-padding {
+        padding: 4em;
+    }
+}
+
+.btn {
+    display: block;
+    width: 170px;
+    margin-top: 0.5em;
+    color: var(--violet);
+    background-color: white;
+    padding: 0.75em 3.5em;
+    border-radius: 100vw;
+    text-decoration: none;
+    font-family: var(--ff-body);
+    margin-inline: auto;
 }
