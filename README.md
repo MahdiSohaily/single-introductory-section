@@ -1,6 +1,6 @@
 # Frontend Mentor - Huddle landing page with single introductory section solution
 
-This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -25,15 +25,14 @@ Users should be able to:
 
 ### Screenshot
 
-- Screenshot of the solution
-![Solution Screenshot](./design/desktop.png)
-- Screenshot of the solution
-![Solution Screenshot](./design/mobile.png)
+| Desktop version                              |               Mobile Version                |
+| -------------------------------------------- | :-----------------------------------------: |
+| ![Solution Screenshot](./design/desktop.png) | ![Solution Screenshot](./design/mobile.png) |
 
 ### Links
 
-- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/testimonialsgridsectionmain-yZAI0suCGf)
-- Live Site URL: [Live site URL](https://mahdisohaily.github.io/testimonials-grid-section-main/)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/single-introductory-section-ptPrEHeedo)
+- Live Site URL: [Live site URL](https://mahdisohaily.github.io/single-introductory-section/)
 
 ## My process
 
@@ -46,6 +45,7 @@ Users should be able to:
 - Mobile-first workflow
 - [sass](https://sass-lang.com/) - CSS preprocessor
 - [vite.js](https://vitejs.dev/) - Vite is a build tool
+
 ## Author
 
 - Frontend Mentor - [@MahdiSohaily](https://www.frontendmentor.io/profile/MahdiSohaily)
